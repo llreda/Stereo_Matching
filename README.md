@@ -33,7 +33,7 @@ The `constancy` means using feature constancy as a loss term,and the `gwc_g` and
 
 The depth estimation of the `stackhourglass`, `constancy`, `gwc_gc` and the reconstructed surface are shows as below:
 
-![depth](pics/depth.png)
+<img src="pics/depth.png" alt="depth" style="zoom: 50%;" />
 
-![surface](pics/surface.gif) 
+​                                                        <img src="pics/surface.gif" alt="surface" style="zoom: 67%;" /> 
 
