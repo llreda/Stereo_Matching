@@ -1,0 +1,28 @@
+version: 1
+formatters:
+  brief:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    datefmt: '%Y-%d-%m %H:%M:%S'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: brief
+    level: DEBUG
+    stream: ext://sys.stdout
+  file:
+     class: logging.FileHandler
+     filename: 'runs.log'
+     formatter: brief
+     level: INFO
+loggers:
+  filelog:
+    level: INFO
+    handlers: [file, console]
+    propagate: no
+  consolelog:
+    level: INFO
+    handlers: [console]
+    propagate: no
+root:
+  level: DEBUG
+  handlers: [console]
